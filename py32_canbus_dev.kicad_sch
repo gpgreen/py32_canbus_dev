@@ -5122,12 +5122,6 @@
 		(uuid "0d8c1d44-9911-4be4-b076-3565181efb75")
 	)
 	(junction
-		(at 232.41 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e69f797-93ff-4e9b-a465-ee591da8a3d6")
-	)
-	(junction
 		(at 130.81 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5264,12 +5258,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e246220f-132b-4cde-bbc9-e8a99d52c0df")
-	)
-	(junction
-		(at 232.41 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e57618dd-7723-48d2-a7ec-bec06de17ea9")
 	)
 	(junction
 		(at 238.76 147.32)
@@ -5640,16 +5628,6 @@
 			(type default)
 		)
 		(uuid "27ff4694-10a2-46ff-a5da-4356d227dcf4")
-	)
-	(wire
-		(pts
-			(xy 232.41 46.99) (xy 232.41 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "289d1dc6-0b79-4b7c-b722-489ba1e7f656")
 	)
 	(wire
 		(pts
@@ -6123,7 +6101,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 41.91) (xy 232.41 44.45)
+			(xy 232.41 41.91) (xy 232.41 82.55)
 		)
 		(stroke
 			(width 0)
@@ -6663,16 +6641,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 46.99) (xy 245.11 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eabea7db-6e36-416f-bf06-696810ae904b")
-	)
-	(wire
-		(pts
 			(xy 139.7 175.26) (xy 139.7 177.8)
 		)
 		(stroke
@@ -6700,26 +6668,6 @@
 			(type default)
 		)
 		(uuid "f46756f1-85bb-4f8d-a2b6-a5ead8d4a650")
-	)
-	(wire
-		(pts
-			(xy 232.41 44.45) (xy 232.41 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7bcf769-a478-4a2a-9ad0-a225c45833e8")
-	)
-	(wire
-		(pts
-			(xy 232.41 44.45) (xy 245.11 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa2b54eb-dde2-4c88-ba90-5c1317a5f93f")
 	)
 	(wire
 		(pts
@@ -6933,7 +6881,7 @@
 	)
 	(global_label "PA15"
 		(shape bidirectional)
-		(at 245.11 62.23 180)
+		(at 245.11 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6943,7 +6891,29 @@
 		)
 		(uuid "004c942f-d5b0-4d07-a236-98b5c61cd024")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.9193 62.3094 0)
+			(at 237.9193 57.2294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA10"
+		(shape bidirectional)
+		(at 245.11 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03b5131f-6e71-4b89-8f62-82342b30d4d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.2359 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7062,8 +7032,8 @@
 			)
 		)
 	)
-	(global_label "OSC32OUT"
-		(shape output)
+	(global_label "PA9"
+		(shape bidirectional)
 		(at 162.56 105.41 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7074,7 +7044,7 @@
 		)
 		(uuid "1aa863df-5d44-418c-93e2-7cb5a9a44203")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 174.8307 105.4894 0)
+			(at 170.2246 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,8 +7427,8 @@
 			)
 		)
 	)
-	(global_label "OSC32IN"
-		(shape input)
+	(global_label "PA10"
+		(shape bidirectional)
 		(at 162.56 102.87 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7469,7 +7439,7 @@
 		)
 		(uuid "6fb61697-b1ef-4de4-a8e6-09e80cf676ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.1374 102.9494 0)
+			(at 171.4341 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7742,6 +7712,28 @@
 			)
 		)
 	)
+	(global_label "PA9"
+		(shape bidirectional)
+		(at 245.11 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8b58073d-89da-4a36-919a-19f52c0f78c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.4454 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI1-NSS"
 		(shape input)
 		(at 289.56 46.99 180)
@@ -7788,7 +7780,7 @@
 	)
 	(global_label "PB4"
 		(shape bidirectional)
-		(at 245.11 57.15 180)
+		(at 245.11 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7798,7 +7790,7 @@
 		)
 		(uuid "94c6b3c9-678b-4ce6-97c3-65c2be8d9ac5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.9474 57.0706 0)
+			(at 238.9474 51.9906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7832,7 +7824,7 @@
 	)
 	(global_label "PB3"
 		(shape bidirectional)
-		(at 245.11 59.69 180)
+		(at 245.11 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7842,7 +7834,7 @@
 		)
 		(uuid "96d53052-e286-4a99-a4c8-ca35fa1b1133")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.9474 59.6106 0)
+			(at 238.9474 54.5306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7941,7 +7933,7 @@
 	)
 	(global_label "USB_RX"
 		(shape input)
-		(at 245.11 49.53 180)
+		(at 245.11 44.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7951,7 +7943,7 @@
 		)
 		(uuid "a3309b0d-6e99-4941-8d66-8b650c5c747f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.8677 49.53 0)
+			(at 234.8677 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8204,7 +8196,7 @@
 	)
 	(global_label "USB_TX"
 		(shape output)
-		(at 245.11 52.07 180)
+		(at 245.11 46.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8214,7 +8206,7 @@
 		)
 		(uuid "bca781ad-43d0-4a07-bef5-cd8e7acaa1c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 235.1701 52.07 0)
+			(at 235.1701 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8292,7 +8284,7 @@
 	)
 	(global_label "PB5"
 		(shape bidirectional)
-		(at 245.11 54.61 180)
+		(at 245.11 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8302,7 +8294,7 @@
 		)
 		(uuid "c81889f7-be11-4c16-98d5-fabca18e766f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.9474 54.5306 0)
+			(at 238.9474 49.4506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8444,7 +8436,7 @@
 	)
 	(global_label "PA12"
 		(shape bidirectional)
-		(at 245.11 64.77 180)
+		(at 245.11 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8454,7 +8446,7 @@
 		)
 		(uuid "ee7e0d28-dc3a-42f1-b8a7-2e7391910127")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.9193 64.6906 0)
+			(at 237.9193 59.6106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8466,7 +8458,7 @@
 	)
 	(global_label "PA11"
 		(shape bidirectional)
-		(at 245.11 67.31 180)
+		(at 245.11 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8476,7 +8468,7 @@
 		)
 		(uuid "f3cc6d86-4c73-4c11-a84b-28426854ca5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.9193 67.2306 0)
+			(at 237.9193 62.1506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11652,15 +11644,6 @@
 			)
 		)
 		(property "Description" "High-Speed CAN Transceiver, 1Mbps, 5V supply, Vio pin, -40C to +125C, SOIC-8"
-			(at 238.76 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
 			(at 238.76 135.89 0)
 			(effects
 				(font
