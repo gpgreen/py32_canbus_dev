@@ -4982,126 +4982,6 @@
 				)
 			)
 		)
-		(symbol "power:VDD"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 107.95 41.91)
@@ -5981,16 +5861,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 63.5) (xy 67.31 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74713499-5fc3-44aa-93d9-dc105dce4540")
-	)
-	(wire
-		(pts
 			(xy 185.42 168.91) (xy 190.5 168.91)
 		)
 		(stroke
@@ -6760,17 +6630,6 @@
 			(justify left bottom)
 		)
 		(uuid "68969249-4ad5-457f-9eb9-5e5d76e1d11e")
-	)
-	(text "UA78M33CDCYR"
-		(exclude_from_sim no)
-		(at 86.995 27.305 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "81db6f0d-d9ab-432f-917f-01e192a55ff9")
 	)
 	(text "MCP 2518 CAN FD Controller"
 		(exclude_from_sim no)
@@ -8887,72 +8746,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 25.4 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fb0326c-b392-4170-9c7f-3e69eb65440b")
-		(property "Reference" "#PWR06"
-			(at 25.4 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 25.4 78.9742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 25.4 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "356f2306-99d8-49a0-a061-f7b3bad49076")
-		)
-		(instances
-			(project "py32_canbus_dev"
-				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 54.61 96.52 0)
 		(unit 1)
@@ -9215,138 +9008,6 @@
 			(project "py32_canbus_dev"
 				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 80.01 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c0a9dd0-1e1f-4d70-b5a5-f66e4da3d9d6")
-		(property "Reference" "#PWR0123"
-			(at 80.01 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 80.01 30.7142 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 80.01 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7355a163-b698-4d14-af5b-502f58a8d222")
-		)
-		(instances
-			(project ""
-				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
-					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 210.82 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c0be2f6-a3ff-4c05-918a-b63819a22e25")
-		(property "Reference" "#PWR0125"
-			(at 210.82 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 210.82 25.6342 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 210.82 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93e01bc2-709c-4c86-ae14-a5ab5f09c6ff")
-		)
-		(instances
-			(project ""
-				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
-					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -9689,17 +9350,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 49.53 96.52 0)
+		(lib_id "power:+5V")
+		(at 25.4 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39126f68-9102-450c-933c-74982264e156")
-		(property "Reference" "#PWR013"
-			(at 49.53 100.33 0)
+		(uuid "3a39fdd7-9bef-4b69-bb68-3804e7e952a3")
+		(property "Reference" "#PWR06"
+			(at 25.4 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9707,8 +9367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 49.53 92.9442 0)
+		(property "Value" "+5V"
+			(at 25.4 78.4169 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9716,7 +9376,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 96.52 0)
+			(at 25.4 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9725,7 +9385,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 96.52 0)
+			(at 25.4 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9733,8 +9393,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 49.53 96.52 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 25.4 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9743,12 +9403,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "14451553-a9d5-4660-bc8b-d70e8aed2070")
+			(uuid "a607c2e0-c8e3-4b19-b014-ca24c0b5763f")
 		)
 		(instances
 			(project "py32_canbus_dev"
 				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
-					(reference "#PWR013")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -10704,72 +10364,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 63.5 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59c10e04-6815-4664-ab8a-790bdd0e036c")
-		(property "Reference" "#PWR022"
-			(at 63.5 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 63.5 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 63.5 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "66737a2e-226d-4d18-b17b-e3f8adf003a7")
-		)
-		(instances
-			(project ""
-				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 241.3 19.05 0)
 		(unit 1)
@@ -11028,6 +10622,71 @@
 			(project "py32_canbus_dev"
 				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 210.82 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61deb6c3-627e-4a38-a2c9-afe166f4e1af")
+		(property "Reference" "#PWR026"
+			(at 210.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 210.82 25.0769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 210.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bb6c6b7-bc32-40ad-a2f6-c7ef117579bf")
+		)
+		(instances
+			(project "py32_canbus_dev"
+				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -13717,15 +13376,15 @@
 		(fields_autoplaced yes)
 		(uuid "d1f24bfc-5e06-4d2f-bb67-193cb23328ee")
 		(property "Reference" "U1"
-			(at 93.98 28.6852 0)
+			(at 93.98 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "uA7805"
-			(at 93.98 31.2221 0)
+		(property "Value" "UA78M33CDCYR"
+			(at 93.98 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13774,6 +13433,71 @@
 			(project ""
 				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 49.53 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3d6f912-1442-4ce9-8e4d-c6860c5473be")
+		(property "Reference" "#PWR01"
+			(at 49.53 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 49.53 92.3869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 49.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e236ff35-cd2a-4b72-8f6c-05325f26739f")
+		)
+		(instances
+			(project "py32_canbus_dev"
+				(path "/ab8a7ebb-f4fb-47c8-ad7a-9d37f6d0f59e"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -14685,7 +14409,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 67.31 63.5 0)
+		(at 80.01 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14693,7 +14417,7 @@
 		(dnp no)
 		(uuid "f3b17f92-3273-4bb5-957c-5b1d1715725f")
 		(property "Reference" "#PWR023"
-			(at 67.31 67.31 0)
+			(at 80.01 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14702,7 +14426,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 67.31 59.3669 0)
+			(at 80.01 30.1569 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14710,7 +14434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 63.5 0)
+			(at 80.01 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14719,7 +14443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 63.5 0)
+			(at 80.01 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14728,7 +14452,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 67.31 63.5 0)
+			(at 80.01 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
