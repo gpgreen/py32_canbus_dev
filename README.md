@@ -30,7 +30,7 @@ https://github.com/gpgreen/py32-dev-blink
 
 A boot configuration must be selected for the development board to
 operate. If a program has been flashed then booting from main flash
-should be selected to run that program.
+should be selected for that program to run.
 
 To boot from main flash [0x0800_0000] Connect J2-4 to J2-5 (or) solder
   JP5-1 to center post
@@ -54,16 +54,16 @@ block. See the reference manual 3.6.2.
 [SWCLK]PA14-|5                  5|-GND
 [SWDIO]PA13-|6                  6|-GND
         GND-|7       RST        7|-GND
-        PF3-|8       +-+        8|-GND
-        PA0-|9       |O|        9|-GND
-  [SCK] PA1-|10      +-+       10|-PB7 [USB RX]
- [MOSI] PA2-|11                11|-PB6 [USB TX]
-        PA3-|12                12|-PB5
-  [NSS] PA4-|13                13|-PB4
-[CAN I] PA5-|14                14|-PB3
- [MISO] PA6-|15                15|-PA15
-        PA7-|16                16|-PA12 [USER LED - GREEN]
-        PB0-|17                17|-PA11
+        PF3-|8       +-+        8|-PB7 [USB RX]
+        PA0-|9       |O|        9|-PB6 [USB TX]
+  [SCK] PA1-|10      +-+       10|-PB5
+ [MOSI] PA2-|11                11|-PB4
+        PA3-|12                12|-PB3
+  [NSS] PA4-|13                13|-PA15
+[CAN I] PA5-|14                14|-PA12 [USER LED - GREEN]
+ [MISO] PA6-|15                15|-PA11
+        PA7-|16                16|-PA10
+        PB0-|17                17|-PA9
         PB1-|18    +------+    18|-PA8
             |     1| o  o |2     |
             +--------------------+
