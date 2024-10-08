@@ -5074,12 +5074,6 @@
 		(uuid "61abeedf-264c-4b25-aab6-be7aaee14c1d")
 	)
 	(junction
-		(at 121.92 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "638789f3-655b-4ce2-89e0-c3d6bfe46436")
-	)
-	(junction
 		(at 306.07 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5298,16 +5292,6 @@
 			(type dash)
 		)
 		(uuid "0b3a5344-e7d2-4fd5-aa57-92e931db099e")
-	)
-	(wire
-		(pts
-			(xy 121.92 90.17) (xy 121.92 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cb428d0-8d66-40ab-9dd6-71a58ca21c55")
 	)
 	(wire
 		(pts
@@ -6828,7 +6812,7 @@
 	)
 	(global_label "USB_RX"
 		(shape input)
-		(at 121.92 125.73 180)
+		(at 121.92 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6838,7 +6822,7 @@
 		)
 		(uuid "12b3fa6a-21da-42cc-83dd-5014809f98f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.6777 125.73 0)
+			(at 111.6777 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7266,7 +7250,7 @@
 	)
 	(global_label "USB_TX"
 		(shape output)
-		(at 121.92 123.19 180)
+		(at 121.92 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7276,7 +7260,7 @@
 		)
 		(uuid "63c94e9b-650e-4df8-8466-620e6aacf6ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.9801 123.19 0)
+			(at 111.9801 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
