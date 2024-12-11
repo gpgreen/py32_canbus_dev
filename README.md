@@ -1,18 +1,16 @@
 # py32_canbus_dev
 
-KiCad design for a ARM Cortex-M0+ CAN bus development board. The MCU
-is a Puya PY32 Series. The board includes a MCP2518 CAN
-controller. The specific part is PY032F030K18T6. This can run at a
-maximum of 48 MHz, and has 8 kbyte SRAM and 64 kbyte Flash. A USB B
-mini connector provides 5V power and interfaces with a FTDI device
-wired as a Serial Comm to the development board. The board must be
-programmed with a debugger, ie at this time it cannot be programmed
-over the usb. Design use's a 24 MHz high speed crystal. There is an
-onboard LDO that provides 500mA of power at 3.3V. There is an LED
-connected to 1 of the GPIO pins. The value of the BOOT0 pin can be set
-to ground or 3.3V permanently via the solder bridge. A jumper can be
-used on the pin rails in lieue of the solder bridge. All available
-GPIO pins are routed to the 2 18pin headers.
+KiCad design for a ARM Cortex-M0+ CAN bus development board with a
+MCP2518 CAN FD controller. The mcu part is a Puya PY032F030K18T6. This
+can run at a maximum of 48 MHz, and has 8 kbyte SRAM and 64 kbyte
+Flash. A USB B mini connector provides 5V power and interfaces with a
+FTDI device wired as a Serial Comm to the development board. There is
+an onboard LDO that provides 500mA of power at 3.3V. An LED is
+connected to 1 of the GPIO pins. All available GPIO pins are routed to
+the 2 18pin headers.
+
+The board must be programmed with a debugger, ie at this time it
+cannot be programmed over the usb.
 
 ## Changes
 
@@ -21,8 +19,8 @@ GPIO pins are routed to the 2 18pin headers.
 
 ## Firmware
 
-Example firmware that blinks the LED. When the user pushbutton is pressed,
-the frequency of the LED blink will change.
+Example firmware that blinks the LED. This firmware
+uses the HAL provided by Puya and is in C.
 
 https://github.com/gpgreen/py32-dev-blink
 
@@ -38,8 +36,9 @@ To boot from main flash [0x0800_0000] Connect J2-4 to J2-5 (or) solder
 To boot from System mem [0x1FFF_0000], or Embedded SRAM [0x2000_0000]
   Connect J2-4 to J2-3 (or) solder JP6-3 to center post
 
-There is an embedded boot loader, programmed during mcu chip production, in the system memory
-block. See the reference manual 3.6.2.
+There is an embedded boot loader, programmed during mcu chip
+production, in the system memory block. See the reference manual
+3.6.2.
 
 ## PIN JUMPER SIGNAL ASSIGNMENT
 ```
